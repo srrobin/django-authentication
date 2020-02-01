@@ -1,0 +1,30 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+  {% block title %}Home{% endblock %}
+
+
+
+    {% block content %}
+  <div class="row">
+    <div class="col-md-3 offset-3">
+      <div class="card text-white bg-danger mb-3 mt-5" style="max-width: 18rem;">
+        <div class="card-header">User Information</div>
+        <div class="card-body">
+          <h5 class="card-title">{{user.username|upper}}</h5>
+          <p class="card-text">{{user.first_name|upper}} {{user.last_name|upper}}</p>
+          <p class="card-text">{{user.email}}</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 ">
+         <div style="margin-top:20px;font-size:80px;font-weight:bold">HOME</div>
+      <p>Suspendisse pharetra a enim non blandit. Cras faucibus dictum mauris, et ultrices ipsum
+        feugiat quis. Proin porttitor euismod lorem eu dictum. Ut eu feugiat turpis. Etiam porta
+        turpis dolor, sed pharetra magna efficitur sit
+        amet. Vivamus cursus justo ante, maximus suscipit mi tempor ut. Integer in vestibulum purus.</p>
+    </div>
+  </div>
+    {% endblock %}
+
+
